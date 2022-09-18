@@ -23,6 +23,7 @@ int main()
         a[i] = t;
     }
 
+    //输出
     for ( int i=0; i<len; i++ ) {
         printf("%d ", a[i]);
     }

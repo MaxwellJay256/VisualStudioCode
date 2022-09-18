@@ -19,8 +19,8 @@ int main(void)
     //ºÏ≤È––
     for ( i=0; i<size && result == -1; i++) {
         numOfO = numOfX = 0;
-        for ( j=0; j<size; j++ ){
-            if ( board[i][j] == 1 ){
+        for ( j=0; j<size; j++ ) {
+            if ( board[i][j] ) {
                 numOfX ++;
             } else {
                 numOfO ++;
@@ -28,7 +28,7 @@ int main(void)
         }
         if ( numOfO == size ) {
             result = 0;
-        } else if ( numOfX == size ){
+        } else if ( numOfX == size ) {
             result = 1;
         }
     }
@@ -38,7 +38,7 @@ int main(void)
         for ( j=0; j<size && result == -1; j++) {
             numOfO = numOfX = 0;
             for ( i=0; i<size; i++ ){
-                if ( board[i][j] == 1 ){
+                if ( board[i][j] ) {
                     numOfX ++;
                 } else {
                     numOfO ++;
@@ -46,7 +46,7 @@ int main(void)
             }
             if ( numOfO == size ) {
                 result = 0;
-            } else if ( numOfX == size ){
+            } else if ( numOfX == size ) {
                 result = 1;
             }
         }
@@ -56,7 +56,7 @@ int main(void)
     if ( result == -1 ) {
         numOfO = numOfX = 0;
         for ( i=0; i<size; i++) {
-            if ( board[i][i] == 1 ){
+            if ( board[i][i] ) {
                 numOfX ++;
             } else {
                 numOfO ++;
@@ -64,7 +64,7 @@ int main(void)
         }
             if ( numOfO == size ) {
                 result = 0;
-            } else if ( numOfX == size ){
+            } else if ( numOfX == size ) {
                 result = 1;
             }
     }
@@ -72,7 +72,7 @@ int main(void)
     if ( result == -1 ) {
         numOfO = numOfX = 0;
         for ( i=0; i<size; i++) {
-            if ( board[i][size-i-1] == 1 ){
+            if ( board[i][size-i-1] ) {
                 numOfX ++;
             } else {
                 numOfO ++;
@@ -80,7 +80,7 @@ int main(void)
         }
             if ( numOfO == size ) {
                 result = 0;
-            } else if ( numOfX == size ){
+            } else if ( numOfX == size ) {
                 result = 1;
             }
     }
