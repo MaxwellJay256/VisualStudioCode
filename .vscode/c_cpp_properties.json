@@ -17,7 +17,9 @@
         {
             "name": "Win64",
             "includePath": [
-                "${default}"
+                "${default}",
+                "C:/OpenCV/build/x64/mingw/install/include",
+                "C:/OpenCV/build/x64/mingw/install/include/opencv2"
             ],
             "defines": [
                 "_DEBUG",
